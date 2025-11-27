@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://127.0.0.1:8000/api/automoviles';
+const API_URL = 'https://greythium.com/automobiles-api/public/api/automoviles';
 
 
 export const getAutomoviles = async () => {
@@ -30,7 +30,7 @@ export const deleteAutomovil = async (id) => {
 
 export const getCountries = async () => {
   try {
-    const response = await axios.get('http://127.0.0.1:8000/api/paises');
+    const response = await axios.get('https://greythium.com/automobiles-api/public/api/paises');
     return response.data;
   } catch (error) {
     console.error('Error fetching countries:', error);
